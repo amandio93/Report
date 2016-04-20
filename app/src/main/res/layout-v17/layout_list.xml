@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name problem"
+        android:id="@+id/tvNameProblem"
+        android:layout_below="@+id/tvCodReport"
+        android:layout_toEndOf="@+id/textView21"
+        android:layout_toRightOf="@+id/textView21"
+        android:background="#ffffff"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urgency"
+        android:id="@+id/tvNameUrgency"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_below="@+id/tvNameLocal"
+        android:layout_toRightOf="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Open Report"
+        android:id="@+id/tvDateOpenReport"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textView24"
+        android:layout_toStartOf="@+id/textView24"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Finish report"
+        android:id="@+id/tvDateFinishReport"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/tvDateOpenReport"
+        android:layout_toEndOf="@+id/tvDateOpenReport"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Problema "
+        android:id="@+id/textView21"
+        android:layout_above="@+id/tvNameLocal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blueLight"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urgência "
+        android:id="@+id/textView22"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blueLight"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado "
+        android:id="@+id/textView26"
+        android:background="@color/blueLight"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/tvNameUrgency"
+        android:layout_toRightOf="@+id/tvNameUrgency"
+        android:layout_toEndOf="@+id/tvNameUrgency" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Ínicio"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/tvNameUrgency"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blueLight"
+        android:textColor="#ffffff"
+        android:layout_toStartOf="@+id/tvState"
+        android:layout_toLeftOf="@+id/tvState" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data da resolução"
+        android:id="@+id/textView24"
+        android:background="@color/blueLight"
+        android:textColor="#ffffff"
+        android:textAlignment="textEnd"
+        android:layout_above="@+id/tvDateOpenReport"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView23"
+        android:layout_toEndOf="@+id/textView23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local "
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blueLight"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name Local"
+        android:id="@+id/tvNameLocal"
+        android:layout_below="@+id/tvNameProblem"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nº "
+        android:id="@+id/textView25"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blueLight"
+        android:textColor="#ffffff"
+        android:singleLine="false"
+        android:elegantTextHeight="false"
+        android:autoText="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCodReport"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_toRightOf="@+id/textView25"
+        android:layout_toEndOf="@+id/textView25"
+        android:textColor="#000000"
+        android:text="123"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        android:id="@+id/tvState"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_toRightOf="@+id/textView26"
+        android:layout_toEndOf="@+id/textView26" />
+
+</RelativeLayout>

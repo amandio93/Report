@@ -33,7 +33,8 @@
         <activity android:name=".Register" />
         <activity android:name=".MyAccount" />
         <activity android:name=".OpenReport" />
-        <activity android:name=".ReportList"></activity>
+        <activity android:name=".ReportList" />
+        <activity android:name=".ReportInfo"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,13 @@
 package com.example.amand.rep;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.amigold.fundapter.BindDictionary;
 import com.amigold.fundapter.FunDapter;
@@ -96,7 +100,21 @@ public class ReportList extends AppCompatActivity {
 
             }
         });
-        showReportsTask.execute("http://10.0.3.3:81/estagio/rep/showReport.php");
+        showReportsTask.execute("http://10.0.3.3:81/estagio/rep/showReportList.php");
+
+        lvReport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,
+                                    long id) {
+                int nCodReportToSend = reportList.get(position).cod_report;
+                Toast.makeText(getApplicationContext(), String.valueOf(nCodReportToSend), Toast.LENGTH_SHORT).show();
+                Intent reportInfo = new Intent(getApplicationContext(), ReportInfo.class);
+                reportInfo.putExtra("codReport", String.valueOf(nCodReportToSend));
+                startActivity(reportInfo);
+            }
+        });
 
     }
+
+
 }
